@@ -1,6 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
+const fancylog = require('fancy-log');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const babel = require('gulp-babel');
@@ -25,8 +26,7 @@ gulp.task('lint-scss', function() {
 			configFile: '.stylelintrc.json',
 			reporters: [
 				{ formatter: 'string', console: true }
-			],
-			failAfterError: true
+			]
 		}));
 });
 
@@ -35,6 +35,7 @@ gulp.task('lint-js', function() {
 		.pipe(eslint())
 		.pipe(eslint.format());
 });
+
 
 /* Compilers
 ======================== */
@@ -50,6 +51,7 @@ gulp.task('compile-js', function() {
 		.pipe(babel())
 		.pipe(gulp.dest('dist/js'));
 });
+
 
 /* Chains
 ======================== */

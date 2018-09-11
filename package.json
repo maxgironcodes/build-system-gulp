@@ -9,8 +9,8 @@
     "eslint": "node_modules/eslint/bin/eslint.js",
     "config:eslint": "npm run eslint -- --init",
     "clean:deps": "rm -rf node_modules",
-		"clean:logs": "rm -rf ~/.npm/_logs/*",
-    "start": "mkdir dev dist && mkdir dev/scss dev/js dist/css dist/js && npm install && npm run config:eslint"
+    "clean:logs": "rm -rf ~/.npm/_logs/*",
+    "start": "alias npms=\"npm -s\" && mkdir dev dist && mkdir dev/scss dev/js dist/css dist/js && npm install && npm run config:eslint"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "eslint": "^5.5.0",
+    "fancy-log": "^1.3.2",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0-beta.2",
     "gulp-eslint": "^5.0.0",
