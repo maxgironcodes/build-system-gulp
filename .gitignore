@@ -1,12 +1,48 @@
 
-# Created by https://www.gitignore.io/api/node
+# Created by https://www.gitignore.io/api/git,sass,node,macos
+
+### Git ###
+*.orig
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 ### Node ###
 # Logs
 logs
 *.log
 npm-debug.log*
-.DS_Store
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
 # node-waf configuration
 .lock-wscript
@@ -35,4 +71,11 @@ node_modules/
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
-# End of https://www.gitignore.io/api/node
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+
+# End of https://www.gitignore.io/api/git,sass,node,macos
