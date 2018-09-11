@@ -9,6 +9,7 @@
     "eslint": "node_modules/eslint/bin/eslint.js",
     "config:eslint": "npm run eslint -- --init",
     "clean:deps": "rm -rf node_modules",
+		"clean:logs": "rm -rf ~/.npm/_logs/*",
     "start": "mkdir dev dist && mkdir dev/scss dev/js dist/css dist/js && npm install && npm run config:eslint"
   },
   "author": "",
