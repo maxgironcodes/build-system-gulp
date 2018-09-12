@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "gulp": "node_modules/gulp/bin/gulp.js",
+		"gulp:css": "npm run gulp -- lint-scss && npm run gulp -- compile-css",
+		"gulp:js": "npm run gulp -- lint-js && npm run gulp -- compile-js",
     "stylelint": "node_modules/stylelint/bin/stylelint.js",
     "eslint": "node_modules/eslint/bin/eslint.js",
     "config:eslint": "npm run eslint -- --init",
