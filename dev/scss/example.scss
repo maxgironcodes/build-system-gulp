@@ -1,8 +1,3 @@
 body {
-	&.example {
-		background-color: scale-color(red, $lightness: 50%);
-	}
-}
-
-body.example {
+  background-color: scale-color(#f30000, $lightness: 50%);
 }

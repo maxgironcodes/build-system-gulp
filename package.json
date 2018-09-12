@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "gulp": "node_modules/gulp/bin/gulp.js",
-		"gulp:css": "npm run gulp -- lint-scss && npm run gulp -- compile-css",
-		"gulp:js": "npm run gulp -- lint-js && npm run gulp -- compile-js",
+    "gulp:css": "npm run gulp -- lint-scss && npm run gulp -- compile-css",
+    "gulp:js": "npm run gulp -- lint-js && npm run gulp -- compile-js",
+    "gulp:img": "npm run gulp -- compress-img",
     "config:eslint": "node_modules/eslint/bin/eslint.js -- --init",
     "clean:deps": "rm -rf node_modules",
     "clean:logs": "rm -rf ~/.npm/_logs/*",
-    "start": "alias npms=\"npm -s\" && mkdir dev dist && mkdir dev/scss dev/js dist/css dist/js && npm install && npm run config:eslint"
+    "start": "alias npms=\"npm -s\" && mkdir dev dist && mkdir dev/scss dev/js dev/img dist/css dist/js dist/img && npm install && npm run config:eslint"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +22,9 @@
     "eslint": "^5.5.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0-beta.2",
+    "gulp-babel-minify": "^0.4.3",
     "gulp-eslint": "^5.0.0",
+    "gulp-imagemin": "^4.1.0",
     "gulp-sass": "^4.0.1",
     "gulp-stylelint": "^7.0.0",
     "stylelint": "^9.5.0",
