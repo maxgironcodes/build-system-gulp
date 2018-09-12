@@ -1,7 +1,6 @@
 'use strict';
 
 const gulp = require('gulp');
-const fancylog = require('fancy-log');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const babel = require('gulp-babel');
